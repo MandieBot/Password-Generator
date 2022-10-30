@@ -10,3 +10,4 @@ Upon clicking the 'Generate Password' button, the user is first asked to enter t
 
 [Random Password Generator] (https://mandiebot.github.io/Password-Generator/)
 
+![Screenshot of Deployed Application] <img width="1440" alt="Screen Shot 2022-10-30 at 2 19 12 PM" src="https://user-images.githubusercontent.com/115324641/198899864-ea3bd7f1-69ca-405a-9ce2-7346f5178422.png">
