@@ -113,6 +113,9 @@ if (pwLength >= 8 && pwLength <= 128) {
   upperCase = getUppercase();
   numericValue = getNumericValue();
   specialChar = getSpecialChar();
+  if (lowerCase || upperCase || numericValue || specialChar) {
+    for (var i = 0; i < pwLength; i++) {}
+  }
 } else {
   alert("Please choose a number between 8 and 128");
 }
