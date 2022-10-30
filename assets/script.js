@@ -12,7 +12,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-//Declare variables
+//Declare global variables
 var lowerArray = [
   "a",
   "b",
@@ -78,11 +78,13 @@ var specialChar;
 var pwLength;
 
 //Length prompt
+
 var getLength = function () {
   var pwLength = window.prompt("How long do you want your password?");
   return pwLength;
-  // lowerCase = getLowercase();
 };
+
+//Confirm yes or no for lowercase
 
 var getLowercase = function () {
   var lowercaseOpt = window.confirm(
@@ -91,16 +93,24 @@ var getLowercase = function () {
   return lowercaseOpt;
 };
 
+//Confirm yes or no for uppercase
+
 var getUppercase = function () {
   var uppercaseOpt = window.confirm(
     "Do you want to include uppercase characters?"
   );
   return uppercaseOpt;
 };
+
+//Confirm yes or no for numeric values
+
 var getNumericValue = function () {
   var numericOpt = window.confirm("Do you want to include numeric values?");
   return numericOpt;
 };
+
+//Confirm yes or no for special characters
+
 var getSpecialChar = function () {
   var specialOpt = window.confirm("Do you want to include special characters?");
   return specialOpt;
@@ -114,8 +124,13 @@ if (pwLength >= 8 && pwLength <= 128) {
   numericValue = getNumericValue();
   specialChar = getSpecialChar();
   if (lowerCase || upperCase || numericValue || specialChar) {
-    for (var i = 0; i < pwLength; i++) {}
+    // for (var i = 0; i < pwLength; i++) {}
   }
 } else {
   alert("Please choose a number between 8 and 128");
+}
+//Generate random password using for loop
+
+for (var i = 0; i < pwLength; i++) {
+  var randomNumber = Math.floor(Math.random() * 
 }
